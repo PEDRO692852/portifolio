@@ -15,7 +15,10 @@ import {
   MapPin,
   TrendingUp,
   Users,
-  Eye
+  Eye,
+  Bot,
+  Zap,
+  Activity
 } from 'lucide-react';
 
 interface ProjectMockupProps {
@@ -370,6 +373,86 @@ export const ProjectMockup: React.FC<ProjectMockupProps> = ({
             <div className="relative z-10 flex items-center justify-between text-[11px] text-slate-400 pt-3 border-t border-sky-500/20">
               <span>SAAS PRODUCT & DASHBOARD DESIGN</span>
               <span className="text-sky-400">PROJETO 06</span>
+            </div>
+          </div>
+        );
+
+      case 'zapflow-ai':
+        return (
+          <div className="relative w-full h-full bg-[#050e12] overflow-hidden flex flex-col justify-between p-6 sm:p-10 font-sans">
+            {/* AI Emerald & Teal ambient lighting */}
+            <div className="absolute top-0 right-0 w-80 h-80 bg-emerald-500/15 rounded-full blur-3xl pointer-events-none" />
+            <div className="absolute bottom-0 left-0 w-80 h-80 bg-teal-500/10 rounded-full blur-3xl pointer-events-none" />
+
+            {/* Header */}
+            <div className="relative z-10 flex items-center justify-between border-b border-emerald-500/20 pb-4">
+              <div className="flex items-center space-x-2.5">
+                <div className="w-6 h-6 rounded-lg bg-emerald-500/20 border border-emerald-400/30 flex items-center justify-center">
+                  <Bot className="w-3.5 h-3.5 text-emerald-400" />
+                </div>
+                <span className="text-xs tracking-wider text-white font-bold uppercase">
+                  ZAPFLOW <span className="text-emerald-400">AI</span>
+                </span>
+              </div>
+              <div className="flex items-center space-x-2 text-[11px] text-emerald-300 bg-emerald-950/60 border border-emerald-700/40 px-3 py-1 rounded-md">
+                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                <span>DEMONSTRAÇÃO DO SISTEMA · IA ATIVA</span>
+              </div>
+            </div>
+
+            {/* Visual Dashboard Presentation */}
+            <div className="relative z-10 my-auto py-6">
+              <div className="text-[11px] font-mono text-emerald-400 tracking-wider mb-2 uppercase flex items-center gap-1.5">
+                <Zap className="w-3 h-3 text-emerald-400" />
+                <span>// AUTOMAÇÃO & GESTÃO COM INTELIGÊNCIA ARTIFICIAL</span>
+              </div>
+              <h4 className="text-2xl sm:text-4xl font-bold text-white tracking-tight leading-tight">
+                Atendimento Inteligente, Agendamentos & <br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400">
+                  Painel de Gestão Completo.
+                </span>
+              </h4>
+              <p className="mt-3 text-xs sm:text-sm text-slate-300 max-w-lg leading-relaxed font-light">
+                Sistema automatizado com IA para atendimento ágil, controle de clientes, agendamentos e automação de fluxos com interface moderna.
+              </p>
+
+              {/* System Features & Modules Grid */}
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 mt-5 max-w-xl">
+                <div className="p-2.5 rounded-lg bg-slate-900/90 border border-emerald-900/40">
+                  <div className="flex items-center gap-1 text-[10px] text-slate-400 mb-1">
+                    <Bot className="w-3 h-3 text-emerald-400" />
+                    <span>Atendimento IA</span>
+                  </div>
+                  <div className="text-xs font-bold text-emerald-300">Triagem Rápida</div>
+                </div>
+                <div className="p-2.5 rounded-lg bg-slate-900/90 border border-emerald-900/40">
+                  <div className="flex items-center gap-1 text-[10px] text-slate-400 mb-1">
+                    <Users className="w-3 h-3 text-teal-400" />
+                    <span>Gestão de Clientes</span>
+                  </div>
+                  <div className="text-xs font-bold text-white">Histórico & CRM</div>
+                </div>
+                <div className="p-2.5 rounded-lg bg-slate-900/90 border border-emerald-900/40">
+                  <div className="flex items-center gap-1 text-[10px] text-slate-400 mb-1">
+                    <Calendar className="w-3 h-3 text-cyan-400" />
+                    <span>Agendamentos</span>
+                  </div>
+                  <div className="text-xs font-bold text-cyan-300">Controle de Horários</div>
+                </div>
+                <div className="p-2.5 rounded-lg bg-slate-900/90 border border-emerald-900/40">
+                  <div className="flex items-center gap-1 text-[10px] text-slate-400 mb-1">
+                    <Activity className="w-3 h-3 text-emerald-400" />
+                    <span>Painel Admin</span>
+                  </div>
+                  <div className="text-xs font-bold text-emerald-400">Automações</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Footer */}
+            <div className="relative z-10 flex items-center justify-between text-[11px] text-slate-400 pt-3 border-t border-emerald-500/20">
+              <span className="font-mono">SISTEMA DE ATENDIMENTO & PAINEL ADMINISTRATIVO</span>
+              <span className="text-emerald-400 font-mono font-bold">PROJETO 07</span>
             </div>
           </div>
         );

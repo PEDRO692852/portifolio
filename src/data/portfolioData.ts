@@ -145,6 +145,24 @@ export const PROJECTS: Project[] = [
       gradient: 'from-[#081826] to-[#07090d]',
     },
   },
+  {
+    id: 'zapflow-ai',
+    number: '07',
+    name: 'ZAPFLOW AI',
+    category: 'Automação · Inteligência Artificial',
+    description: 'Sistema de atendimento automatizado com inteligência artificial para empresas, com painel administrativo, atendimento, gestão de clientes, agendamentos e automações.',
+    url: 'https://ia-robot.vercel.app/',
+    featured: false,
+    year: '2025',
+    tags: ['Atendimento com IA', 'Painel Administrativo', 'Gestão de Clientes', 'Agendamentos', 'Automações'],
+    metrics: 'Demonstração de Sistema & Automação com IA',
+    theme: {
+      accentColor: '#10b981', // Emerald IA tech
+      badgeBg: 'rgba(16, 185, 129, 0.12)',
+      badgeText: '#34d399',
+      gradient: 'from-[#061814] to-[#070b0e]',
+    },
+  },
 ];
 
 /**
